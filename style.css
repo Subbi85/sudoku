@@ -1,0 +1,125 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+table {
+	border-collapse: collapse;
+	border: 2px solid blue;
+}
+td{
+	border: 1px solid #ccff66;
+	width: 40px;
+	height: 25px;
+	text-align: center;
+}
+td:nth-child(3), td:nth-child(6){
+	border-right-color: #ff0090;
+	border-right-width: 1px;
+}
+tr:nth-child(3) > td, tr:nth-child(6) > td{
+	border-bottom-color: #ff0090;
+	border-bottom-width: 1px;
+}
+td.vorgabewerte{
+	background-color: #ffccff;
+}
+input{
+	border-style: none;
+	background-color: inherit;
+	text-align: center;
+}
+td.aktivInput{
+	background-color: #ccff66;
+}
+.tabelle {
+  position: absolute;
+  width: 360px;
+  height: 227px;
+  top: 10px;
+  left: 10px;
+  background-color: white;
+  margin: auto auto;
+}
+nav{
+  position: absolute;
+  width: 360px;
+  height: 35px;
+  top: 250px;
+  left: 10px;
+}
+div.hidden{
+	display: none;
+}
+.startDiv {
+  position: absolute;
+  width: 360px;
+  height: 227px;
+  top: 10px;
+  left: 10px;
+  background-color: #ccff66;
+  opacity: 0.7;
+  text-align: center;
+  line-height: 229px;
+}
+.messageDiv {
+  position: absolute;
+  width: 360px;
+  height: 229px;
+  top: 10px;
+  left: 10px;
+  background-color: #ccff66;
+  opacity: 0.9;
+  text-align: center;
+  line-height: 229px;
+}
+
+.timer {
+    /*background: #ff0090;
+    color: #ffffff;*/
+	border: 1px solid #ff0090;
+	background-color: #ccff66;
+	padding: 5px 10px;
+	font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+	display: inline-block;
+}
+
+/* ja, es ist geklaut */
+.btn {
+    padding: 5px 10px;
+    border: 0 none;
+	background: white;
+}
+.btn-secondary {
+    background: #ff0090;
+    color: #ffffff;
+}
+.btn-secondary:active, .btn-secondary.active {
+    background: #ff0090;
+    color: #ccff66;
+}
+
+/* ja, es ist geklaut */
+.custom-select {
+    display: inline-block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem 1.75rem .375rem .75rem;
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+    line-height: 1.5;
+    color: #495057;
+    vertical-align: middle;
+	background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center;
+    background-size: auto auto;
+    background-size: 8px 10px;
+    border: 1px solid #ff0090;
+	background-color: #ccff66;
+    border-radius: .25rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+

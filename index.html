@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Sudoku</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="main.js" defer></script>
+	</head>
+
+	<body>
+		<form onsubmit="return false" name="myForm">
+			<div id="tabelle"></div>
+		</form>
+		<div id="startDiv" onclick="startGame()">
+			<button type="button" class="btn btn-secondary" id="startBtn">Start</button>
+		</div>
+		<!-- gewinnmeldung -->
+		<div id="messageDiv" class="hidden"></div>
+
+		<div id="nav">
+			<div class="btn-group btn-group-toggle" data-toggle="buttons">
+				<label class="btn btn-secondary btn-sm">
+					<input type="radio" name="options" id="easyGameId" autocomplete="off" onclick="gameMode('easyGame')"> einfach
+				</label>
+
+				<label class="btn btn-secondary btn-sm active">
+					<input type="radio" name="options" id="middleGameId" autocomplete="off" onclick="gameMode('middleGame')" checked>mittel
+				</label>
+
+				<label class="btn btn-secondary btn-sm">
+					<input type="radio" name="options" id="hardGameId" autocomplete="off" onclick="gameMode('hardGame')">schwer
+				</label>
+
+				<label class="btn btn-secondary btn-sm">
+					<input type="radio" name="options" id="testGameId" autocomplete="off" onclick="gameMode('testGame')">Demo
+				</label>
+			</div>
+
+			<div class="timer" id="timer" disabled>00:00</div>
+			<br><br>
+			<div class="input-group">
+				<form method="POST" action="" name="myGameNumberForm">
+					  <select class="custom-select custom-select-sm" id="selectGameNumber" name="myGameNumberSelect" onchange="loadGameNumber()">
+						<option selected>Wähle aus gespeicherten Spielen...</option>
+						<!-- zeug wird reingeneriert <option value="003" id="003">30.01.2019</option>-->
+					  </select>
+					  
+				 </form>
+			</div>
+			<!--<p id="errorMessage"></p>-->
+		</div>
+	</body>
+</html>
